@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #d3b8ae;  
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 50px 20px;
+            display: none;
+        }
+
+        #home {
+            display: block;
+        }
+
+        #personal-info {
+            float: left;
+            width: 60%;
+        }
+
+        #profile-picture {
+            float: right;
+            margin-right: 50px;
+        }
+
+        #profile-picture img {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #about {
+            text-align: left;
+        }
+
+        footer {
+            background-color: #d3b8ae; 
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a onclick="showSection('home')">Home</a></li>
+            <li><a onclick="showSection('about-me')">About</a></li>
+            <li><a onclick="showSection('contact')">Contact</a></li>
+            <li><a onclick="showSection('mission-vision')">Mission & Vision</a></li>
+            <li><a onclick="showSection('prelim-act')">Prelim Act</a></li>
+            <li><a onclick="showSection('midterm-act')">Midterm Act</a></li>
+            <li><a onclick="showSection('finals-act')">Finals Act</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div id="profile-picture">
+            <img src="c:\Users\acer i5 3rd gen\Pictures\profile.PNG" alt="Profile Picture">
+        </div>
+        <div id="personal-info">
+            <h3>Personal Information</h3>
+            <p>Name: Maybel Carag</p>
+            <p>Address: Blk 22 Lot 51 Mabuhay Phase 1 Baclaran, Cabuyao Laguna</p>
+        </div>
+    </section>
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>I am an organised, efficient and hard working person, and am willing to<br>
+        discover and accept new ideas which can be put into practice effectively.<br>
+        I am a good listener and learner, able to communicate well with a group and<br>
+        on an individual level. I am able to motivate and direct my talents and skills to meet objectives.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: maybelcarag03@gmail.com</p>
+        <p>Phone: 09677591876</p>
+        <p>Instagram: @mybll16</p>
+    </section> 
+    <section id="mission-vision">
+        <h2>Mission & Vision</h2>
+        <p>Mission: As an institution of higher learning, PnC is committed to equip<br>
+        individuals with knowledge, skills and values that will enable<br>
+        them to achieve their professional goals and provide leadership<br>
+        and service for national development</p>
+        <p>Vision: A premier educational institution of higher learning, developing<br>
+        globally-competitive and value-laden professionals and leaders<br>
+        instrumental to community development and nation building.</p>
+    </section>
+    <section id="prelim-act">
+        <h2>Prelim Act</h2>
+        <img src="c:\Users\acer i5 3rd gen\Pictures\PRE.PNG" alt="Prelim Act">
+    </section>
+    <section id="midterm-act">
+        <h2>Midterm Act</h2>
+        <img src="c:\Users\acer i5 3rd gen\Pictures\M.PNG" alt="Midterm Act 1">
+        <img src="c:\Users\acer i5 3rd gen\Pictures\I.PNG" alt="Midterm Act 2">
+        <img src="c:\Users\acer i5 3rd gen\Pictures\D.PNG" alt="Midterm Act 3">
+        <img src="c:\Users\acer i5 3rd gen\Pictures\term.PNG" alt="Midterm Act 4">
+        <img src="c:\Users\acer i5 3rd gen\Pictures\T.PNG" alt="Midterm Act 5">
+    </section>
+    <section id="finals-act">
+        <h2>Finals Act</h2>
+        <img src="c:\Users\acer i5 3rd gen\Pictures\NOT_DONE.PNG" alt="Finals Act 1">
+        <img src="c:\Users\acer i5 3rd gen\Pictures\DONE_WEBTECH.PNG" alt="Finals Act 2">
+        <img src="c:\Users\acer i5 3rd gen\Pictures\F.PNG" alt="Finals Act 3">
+    </section>
+    <footer>
+        <p>&copy; 2024 Student Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
